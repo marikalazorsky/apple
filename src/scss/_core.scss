@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+.container {
+  @include min-max(250px, 100%, 0);
+}
+
+.wrap {
+  @include min-max(320px, 1198px, 0);
+}
