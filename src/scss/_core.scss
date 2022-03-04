@@ -1,9 +1,19 @@
 @charset "UTF-8";
 
-.container {
-  @include min-max(250px, 100%, 0);
+* {
+  box-sizing: border-box;
+  list-style-type: none;
+  outline: none;
+  text-decoration: none;
+  font-family: "Work Sans", sans-serif;
 }
 
-.wrap {
-  @include min-max(320px, 1198px, 0);
+html {
+  font-size: 62.5%;
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
