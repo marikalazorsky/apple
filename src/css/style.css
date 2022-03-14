@@ -56,7 +56,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
   font-family: "Work Sans", sans-serif; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
   html .center {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -426,10 +427,10 @@ html {
         -o-transition: transform 0.5s;
         transition: transform 0.5s;
         transition: transform 0.5s, -webkit-transform 0.5s; }
-        .section-2 .iphone-btns .iphone-btn span:hover {
-          -webkit-transform: scale(1);
-              -ms-transform: scale(1);
-                  transform: scale(1); }
+      .section-2 .iphone-btns .iphone-btn:hover span {
+        -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+                transform: scale(1); }
       .section-2 .iphone-btns .iphone-btn::after {
         content: "";
         width: 50%;
@@ -566,3 +567,277 @@ html {
       -webkit-transition: opacity 1s 6s;
       -o-transition: opacity 1s 6s;
       transition: opacity 1s 6s; }
+
+.section-4 {
+  height: 140vh;
+  padding: 20vh 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative; }
+  .section-4 .watches {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; }
+    .section-4 .watches div {
+      position: absolute; }
+    .section-4 .watches .watch-bands {
+      -webkit-transition: margin-right 1s;
+      -o-transition: margin-right 1s;
+      transition: margin-right 1s; }
+      .section-4 .watches .watch-bands .watch-band-img {
+        width: 35rem;
+        height: 35rem;
+        -o-object-fit: contain;
+           object-fit: contain; }
+    .section-4 .watches .watch-cases {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-transition: margin-top 1s;
+      -o-transition: margin-top 1s;
+      transition: margin-top 1s; }
+      .section-4 .watches .watch-cases .watch-case-img {
+        width: 35rem;
+        height: 35rem;
+        -o-object-fit: contain;
+           object-fit: contain; }
+  .section-4 .watch-control {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    background-color: rgba(221, 221, 221, 0.4);
+    border-radius: 5rem; }
+    .section-4 .watch-control.hideControl {
+      opacity: 0;
+      visibility: hidden; }
+    .section-4 .watch-control i {
+      font-size: 3rem;
+      color: #6edae6; }
+  .section-4 .watch-top-control {
+    top: 22vh;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
+  .section-4 .watch-right-control {
+    top: 50%;
+    right: 2rem;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%); }
+  .section-4 .watch-bottom-control {
+    left: 50%;
+    bottom: 20vh;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
+  .section-4 .watch-left-control {
+    top: 50%;
+    left: 2rem;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%); }
+  .section-4 .watch-btn {
+    position: absolute;
+    bottom: 30vh;
+    right: 35%;
+    width: 13rem;
+    height: 5rem;
+    background-color: #000;
+    color: #6edae6;
+    border: 0.1rem dashed #fff;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    font-weight: 200;
+    cursor: pointer; }
+
+.section-5 {
+  width: 100%;
+  height: 100vh; }
+  .section-5 .airpods {
+    width: 90%;
+    height: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative; }
+    .section-5 .airpods .section-5-heading {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      font-size: 15rem;
+      font-weight: 300;
+      color: #fff;
+      text-shadow: 0.1rem 0.1rem 0 #999; }
+    .section-5 .airpods img {
+      width: 50%;
+      height: 100%;
+      -o-object-fit: contain;
+         object-fit: contain; }
+    .section-5 .airpods .airpods-img-2 {
+      background-color: #6edae6; }
+    .section-5 .airpods .airpods-buttons {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      margin-top: 5rem; }
+      .section-5 .airpods .airpods-buttons button {
+        width: 15rem;
+        height: 4rem;
+        background-color: #6edae6;
+        margin: 0 2rem;
+        border: none;
+        border-radius: 0.5rem;
+        color: #fff;
+        cursor: pointer; }
+      .section-5 .airpods .airpods-buttons .airpods-btn:last-child {
+        background-color: #fff;
+        color: #6edae6; }
+      .section-5 .airpods .airpods-buttons .airpods-btn {
+        width: -webkit-max-content;
+        width: -moz-max-content;
+        width: max-content; }
+
+.section-6 {
+  width: 100%;
+  height: 40vh;
+  position: relative; }
+  .section-6 .section-6-icons .icon-link {
+    margin: 0 5rem; }
+    .section-6 .section-6-icons .icon-link img {
+      width: 10rem; }
+  .section-6 .copyright {
+    position: absolute;
+    bottom: 5rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem; }
+
+@media (max-width: 1500px) {
+  html {
+    font-size: 45%; } }
+
+@media (max-width: 1100px) {
+  html {
+    font-size: 40%; }
+    html .container .section-1 .navbar .navbar-link {
+      font-weight: 700; }
+    html .container .section-1 .section-1-banner h1 {
+      font-size: 8rem; }
+    html .container .section-1 .section-1-banner p {
+      font-size: 3rem; }
+    html .container .section-4 .watch-btn {
+      right: 25%; } }
+
+@media (max-width: 900px) {
+  .section-3 .section-3-content {
+    width: 90%; }
+    .section-3 .section-3-content .loading-wrapper {
+      width: 70%; }
+      .section-3 .section-3-content .loading-wrapper .loading i {
+        font-size: 6rem; }
+  .section-5 .airpods .section-5-heading {
+    font-size: 12rem; } }
+
+@media (max-width: 700px) {
+  html .container .section-1 .logo {
+    top: 0;
+    left: 2rem; }
+    html .container .section-1 .logo i {
+      font-size: 8rem; }
+  html .container .section-1 .cube-wrapper {
+    opacity: 0.7; }
+    html .container .section-1 .cube-wrapper .controls {
+      display: none; }
+    html .container .section-1 .cube-wrapper .cube {
+      top: 3rem; }
+  html .container .section-1 .section-1-banner {
+    position: absolute; }
+    html .container .section-1 .section-1-banner h1 {
+      position: relative;
+      left: -5rem; }
+    html .container .section-1 .section-1-banner h1::first-letter {
+      visibility: hidden;
+      opacity: 0; }
+    html .container .section-1 .section-1-banner button:hover {
+      -webkit-clip-path: polygon(50% 0%, 81% 5%, 100% 0, 100% 100%, 80% 95%, 50% 100%, 20% 95%, 0 100%, 0 0, 23% 5%);
+              clip-path: polygon(50% 0%, 81% 5%, 100% 0, 100% 100%, 80% 95%, 50% 100%, 20% 95%, 0 100%, 0 0, 23% 5%); }
+  html .container .section-2 .iphones {
+    height: 70vh;
+    width: 70vw; }
+  html .container .section-4 .watch-btn {
+    right: 15%; }
+  html .container .section-5 .airpods .airpods-img-1 {
+    display: none; }
+  html .container .section-5 .airpods .airpods-img-2 {
+    width: 100%; }
+  html .container .section-5 .airpods .airpods-buttons .airpods-btn {
+    background-color: #fff;
+    color: #6edae6;
+    -webkit-box-shadow: 0.1rem 0.1rem 0.1rem #ddd;
+            box-shadow: 0.1rem 0.1rem 0.1rem #ddd; }
+  html .container .section-6 .section-6-icons .icon-link {
+    margin: 0 2rem; } }
+
+@media (max-width: 550px) {
+  .section-1 .navbar .navbar-link {
+    margin: 0 1.5rem; }
+  .section-2 .section-2-heading {
+    font-size: 8rem; }
+  .section-3 .section-3-heading {
+    font-size: 8rem; }
+  .section-3 .section-3-content .macbook-info .macbook-info-heading {
+    font-size: 5rem; }
+  .section-3 .section-3-content .macbook-info .macbook-btn {
+    width: 15rem;
+    height: 3rem;
+    font-size: 1.3rem; }
+  .section-5 .airpods .airpods-buttons {
+    width: 50rem;
+    text-align: center; }
+  .section-6 .section-6-icons .icon-link img {
+    width: 8rem; } }
+
+@media (max-width: 450px) {
+  html {
+    font-size: 35%; }
+    html .container .section-1 .logo {
+      top: 10rem;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%); }
+    html .container .section-1 .navbar {
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      width: -webkit-max-content;
+      width: -moz-max-content;
+      width: max-content; }
+    html .container .section-1 .section-1-banner p {
+      text-align: center; }
+    html .container .section-2 .iphones {
+      width: 75vw; }
+    html .container .section-3 .section-3-heading {
+      font-size: 6rem; }
+    html .container .section-3 .macbook-info {
+      width: 40rem; }
+      html .container .section-3 .macbook-info .macbook-info-heading {
+        font-size: 3rem; }
+      html .container .section-3 .macbook-info .macbook-price {
+        font-size: 2rem;
+        font-weight: 300; }
+    html .container .section-4 .watch-btn {
+      right: 5%; }
+    html .container .section-6 .section-6-icons .icon-link img {
+      width: 6rem; } }
