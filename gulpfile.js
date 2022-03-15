@@ -10,11 +10,20 @@ var gulp       = require('gulp'),
 	cache        = require('gulp-cache'),
 	autoprefixer = require('gulp-autoprefixer');
 
+	const ghPages = require('gh-pages');
+	const path = require('path');
+
+	function deploy(cb) {
+		ghPages.publish(path.join(process.cwd(), './build'), cb);
+	  }
+	  exports.deploy = deploy;
+	  
+
 	var gulp = require('gulp');
 	var ghPages = require('gulp-gh-pages');
 
 	gulp.task('deploy', function() {
-	return gulp.src('./build/**/*')
+	return gulp.src('/build/**/*')
 		.pipe(ghPages());
 	});
 
